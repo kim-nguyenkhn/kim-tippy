@@ -1,4 +1,4 @@
-# Pre-work - kim-tippy
+# Kim-tippy app for CodePath
 
 kim-tippy is a tip calculator application for iOS.
 
@@ -36,7 +36,7 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Answer:** With the advent of auto-layouts in XCode 8, and streamlined code in Swift 3.0, I feel that development in iOS is easier and more engaging than ever (I stayed after work to finish this)! I would describe outlets and actions as linkages between UI elements in storyboards and the source code. At first glance, it looks like they're implemented through nested XML and plenty of attributes to configure each element.
 
-Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
+**Question 2**: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
 **Answer:** Assigning a *class* instance to a property, constant, or variable creates a strong reference to that instance.  As long as there is one strong reference to that instance, the memory for that class instance will not be deallocated.
 
@@ -49,7 +49,7 @@ In summary, to get a strong reference cycle for closures, a closure of a class s
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2017] [Kim H. Nguyen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
