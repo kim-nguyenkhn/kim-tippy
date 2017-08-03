@@ -13,6 +13,7 @@
 		ABC14D881F329BC6002AF8C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC14D871F329BC6002AF8C7 /* Assets.xcassets */; };
 		ABC14D8B1F329BC6002AF8C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC14D891F329BC6002AF8C7 /* LaunchScreen.storyboard */; };
 		ABC14D961F329BC6002AF8C7 /* kim_tippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC14D951F329BC6002AF8C7 /* kim_tippyTests.swift */; };
+		ABC14DA11F32ABB1002AF8C7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC14DA01F32ABB1002AF8C7 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		ABC14D911F329BC6002AF8C7 /* kim-tippyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "kim-tippyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC14D951F329BC6002AF8C7 /* kim_tippyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kim_tippyTests.swift; sourceTree = "<group>"; };
 		ABC14D971F329BC6002AF8C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC14DA01F32ABB1002AF8C7 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				ABC14D801F329BC6002AF8C7 /* AppDelegate.swift */,
 				ABC14D821F329BC6002AF8C7 /* ViewController.swift */,
 				ABC14D841F329BC6002AF8C7 /* Main.storyboard */,
+				ABC14DA01F32ABB1002AF8C7 /* SettingsViewController.swift */,
 				ABC14D871F329BC6002AF8C7 /* Assets.xcassets */,
 				ABC14D891F329BC6002AF8C7 /* LaunchScreen.storyboard */,
 				ABC14D8C1F329BC6002AF8C7 /* Info.plist */,
@@ -201,6 +204,7 @@
 			files = (
 				ABC14D831F329BC6002AF8C7 /* ViewController.swift in Sources */,
 				ABC14D811F329BC6002AF8C7 /* AppDelegate.swift in Sources */,
+				ABC14DA11F32ABB1002AF8C7 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
