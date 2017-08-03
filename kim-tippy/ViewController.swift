@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var tipPageView: UIView!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var bottomView: UIView!
     
@@ -26,9 +27,14 @@ class ViewController: UIViewController {
     let lighterBlueColor = UIColor(red: 194/255, green: 230/255, blue: 249/255, alpha: 0.9)
     let navyColor = UIColor(red: 15/255, green: 108/255, blue: 157/255, alpha: 1)
     let greenColor = UIColor(red: 79/255, green: 200/255, blue: 38/255, alpha: 1)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Initialize the bottom to invisible
+        self.bottomView.alpha = 0
+        
+        // autofocus to bill field
         billField.becomeFirstResponder()
     }
     
@@ -58,6 +64,11 @@ class ViewController: UIViewController {
             tipLabel.text = "$"
             totalLabel.text = "$"
             amountEachLabel.text = "$"
+            
+            UIView.animate(withDuration: 0.4, animations: {
+                // show the bottom portion
+                self.bottomView.alpha = 0
+            })
         }
         else {
             // segmentIndex = 0, 1, 2
@@ -70,6 +81,11 @@ class ViewController: UIViewController {
             tipLabel.text = String(format: "$%.2f", tip)
             totalLabel.text = String(format: "$%.2f", total)
             amountEachLabel.text = String(format: "$%.2f each", amountEach)
+            
+            UIView.animate(withDuration: 0.4, animations: {
+                // show the bottom portion
+                self.bottomView.alpha = 1
+            })
         }
     }
     

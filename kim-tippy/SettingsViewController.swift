@@ -12,6 +12,7 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var defaultTipControl: UISegmentedControl!
     @IBOutlet weak var darkThemeSwitch: UISwitch!
+    @IBOutlet var settingsView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
