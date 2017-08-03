@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TipCalcViewController: UIViewController {
 
     @IBOutlet var tipPageView: UIView!
     @IBOutlet weak var topView: UIView!
@@ -16,21 +16,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
+
     @IBOutlet weak var billField: UITextField!
-    
     @IBOutlet weak var numberInPartyField: UITextField!
     @IBOutlet weak var amountEachLabel: UITextField!
 
     @IBOutlet weak var tipControl: UISegmentedControl!
     
-    let tipPercentages = [0.15, 0.2, 0.22]
-    let lighterBlueColor = UIColor(red: 194/255, green: 230/255, blue: 249/255, alpha: 0.9)
-    let navyColor = UIColor(red: 15/255, green: 108/255, blue: 157/255, alpha: 1)
-    let greenColor = UIColor(red: 79/255, green: 200/255, blue: 38/255, alpha: 1)
-
-    
+    // MARK: VC methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Initialize the bottom to invisible
         self.bottomView.alpha = 0
         
@@ -53,27 +49,26 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-    // calculates tip
     @IBAction func calculateTip(_ sender: AnyObject) {
         // take the billField text, change it into a number
         // otherwise, if it's a nil value, let it be 0
         let bill = Double(billField.text!) ?? 0
         let numberInParty = Double(numberInPartyField.text!) ?? 0
         
+        // if bill or numberInParty isn't valid,
+        // then we don't display the calculations view
         if (bill == 0 || numberInParty == 0) {
             tipLabel.text = "$"
             totalLabel.text = "$"
             amountEachLabel.text = "$"
             
+            // hide the bottom portion
             UIView.animate(withDuration: 0.4, animations: {
-                // show the bottom portion
                 self.bottomView.alpha = 0
             })
         }
         else {
-            // segmentIndex = 0, 1, 2
-            // tipPercentages[0] ...
-            let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+            let tip = bill * Tips.PERCENTAGES_ARR[tipControl.selectedSegmentIndex]
             let total = bill + tip
             let amountEach = total / numberInParty
             
@@ -82,8 +77,8 @@ class ViewController: UIViewController {
             totalLabel.text = String(format: "$%.2f", total)
             amountEachLabel.text = String(format: "$%.2f each", amountEach)
             
+            // show the bottom portion
             UIView.animate(withDuration: 0.4, animations: {
-                // show the bottom portion
                 self.bottomView.alpha = 1
             })
         }
@@ -92,22 +87,25 @@ class ViewController: UIViewController {
     // MARK: Functions
     func loadSettings() {
         let defaults = UserDefaults.standard
-        // load the configured default tip value
+        
+        // load the configured defaults
         let defaultSelectedIndex = defaults.integer(forKey: "defaultSelectedIndex")
         let isDarkThemeOn = defaults.bool(forKey: "isDarkThemeOn")
+        
+        // set the default tip percentage
         tipControl.selectedSegmentIndex = defaultSelectedIndex
         
+        // dark theme selected
         if (isDarkThemeOn) {
-            topView.backgroundColor = lighterBlueColor
-            bottomView.backgroundColor = navyColor
-            tipControl.tintColor = navyColor
-            // set text color to a lighter one
-            
-            
-        } else {
+            topView.backgroundColor = Colors.LIGHT_BLUE
+            bottomView.backgroundColor = Colors.NAVY
+            tipControl.tintColor = Colors.NAVY
+        }
+        // light theme selected
+        else {
             topView.backgroundColor = UIColor.white
-            bottomView.backgroundColor = greenColor
-            tipControl.tintColor = greenColor
+            bottomView.backgroundColor = Colors.GREEN
+            tipControl.tintColor = Colors.GREEN
         }
     }
     

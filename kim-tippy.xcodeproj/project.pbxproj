@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB21E14C1F33CF4B0066EEC9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21E14B1F33CF4B0066EEC9 /* Constants.swift */; };
 		ABC14D811F329BC6002AF8C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC14D801F329BC6002AF8C7 /* AppDelegate.swift */; };
-		ABC14D831F329BC6002AF8C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC14D821F329BC6002AF8C7 /* ViewController.swift */; };
+		ABC14D831F329BC6002AF8C7 /* TipCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC14D821F329BC6002AF8C7 /* TipCalcViewController.swift */; };
 		ABC14D861F329BC6002AF8C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC14D841F329BC6002AF8C7 /* Main.storyboard */; };
 		ABC14D881F329BC6002AF8C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC14D871F329BC6002AF8C7 /* Assets.xcassets */; };
 		ABC14D8B1F329BC6002AF8C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC14D891F329BC6002AF8C7 /* LaunchScreen.storyboard */; };
@@ -27,9 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB21E14B1F33CF4B0066EEC9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ABC14D7D1F329BC6002AF8C7 /* kim-tippy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kim-tippy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC14D801F329BC6002AF8C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ABC14D821F329BC6002AF8C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABC14D821F329BC6002AF8C7 /* TipCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalcViewController.swift; sourceTree = "<group>"; };
 		ABC14D851F329BC6002AF8C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABC14D871F329BC6002AF8C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABC14D8A1F329BC6002AF8C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB21E14D1F33CF570066EEC9 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				AB21E14B1F33CF4B0066EEC9 /* Constants.swift */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
 		ABC14D741F329BC6002AF8C7 = {
 			isa = PBXGroup;
 			children = (
@@ -79,8 +89,9 @@
 		ABC14D7F1F329BC6002AF8C7 /* kim-tippy */ = {
 			isa = PBXGroup;
 			children = (
+				AB21E14D1F33CF570066EEC9 /* config */,
 				ABC14D801F329BC6002AF8C7 /* AppDelegate.swift */,
-				ABC14D821F329BC6002AF8C7 /* ViewController.swift */,
+				ABC14D821F329BC6002AF8C7 /* TipCalcViewController.swift */,
 				ABC14D841F329BC6002AF8C7 /* Main.storyboard */,
 				ABC14DA01F32ABB1002AF8C7 /* SettingsViewController.swift */,
 				ABC14D871F329BC6002AF8C7 /* Assets.xcassets */,
@@ -202,9 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABC14D831F329BC6002AF8C7 /* ViewController.swift in Sources */,
+				ABC14D831F329BC6002AF8C7 /* TipCalcViewController.swift in Sources */,
 				ABC14D811F329BC6002AF8C7 /* AppDelegate.swift in Sources */,
 				ABC14DA11F32ABB1002AF8C7 /* SettingsViewController.swift in Sources */,
+				AB21E14C1F33CF4B0066EEC9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +420,7 @@
 				ABC14D9C1F329BC6002AF8C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ABC14D9D1F329BC6002AF8C7 /* Build configuration list for PBXNativeTarget "kim-tippyTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +429,7 @@
 				ABC14D9F1F329BC6002AF8C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
