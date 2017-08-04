@@ -9,11 +9,16 @@
 import UIKit
 
 struct Colors {
-    static let LIGHT_BLUE = UIColor(red: 194/255, green: 230/255, blue: 249/255, alpha: 0.9)
+    static let LIGHT_BLUE = UIColor(red: 194/255, green: 230/255, blue: 249/255, alpha: 1)
     static let NAVY = UIColor(red: 15/255, green: 108/255, blue: 157/255, alpha: 1)
     static let GREEN = UIColor(red: 79/255, green: 200/255, blue: 38/255, alpha: 1)
+    static let VIOLET = UIColor(red: 70/255, green: 70/255, blue: 230/255, alpha: 1)
 }
 
 struct Tips {
     static let PERCENTAGES_ARR = [0.15, 0.2, 0.22]
+}
+
+struct Constants {
+    static let CLEAR_BTN_DIGITS = 3
 }

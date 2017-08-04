@@ -1,6 +1,6 @@
 # Kim-tippy app for CodePath
 
-kim-tippy is a tip calculator application for iOS.
+kim-tippy is a tip calculator application for iOS, optimized for iPhone 7.
 
 Submitted by: Kim H. Nguyen
 
@@ -17,16 +17,22 @@ The following **optional** features are implemented:
 * [x] Animations!!! Fading the bottom-half of the screen in and out.
 * [x] The bill input is the first responder - keyboard, stat!
 * [x] For those who want to prefer the dark side, I've added a dark theme to the settings page.
+* [x] Localized separators for thousands and decimals, and currency symbols.
 
 The following **additional** features are implemented:
 
 * [x] Figuring out how much to Venmo? After taking the number in your party, *kim-tippy* now calculates the amount to pay per person.
+* [x] Added a clear button for convenience! Shows itself after user enters at least 2 digits.
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Walkthrough of required/optional/additional user stories:
 
-![Tip calculator demo](demo.gif "Tip calculator demo")
+![Tip calculator demo](gifs/demo1_required.gif "Tip calculator demo")
+
+Walkthrough of localized values:
+
+![Tip calculator localized demo](gifs/demo2_locale.gif "Tip calculator localized demo")
 
 ## Project Analysis
 

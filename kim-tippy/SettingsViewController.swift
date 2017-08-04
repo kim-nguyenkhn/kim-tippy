@@ -18,7 +18,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         // load the configured default tip value - only need to do this once
         let defaults = UserDefaults.standard
         let defaultSelectedIndex = defaults.integer(forKey: "defaultSelectedIndex")

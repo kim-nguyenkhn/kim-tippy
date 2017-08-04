@@ -17,55 +17,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" id="cfb-NQ-YLq">
-                                <rect key="frame" x="0.0" y="59" width="375" height="209"/>
+                            <view contentMode="scaleToFill" misplaced="YES" id="vUe-8Z-XRs">
+                                <rect key="frame" x="0.0" y="62" width="375" height="231"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="4Zw-hs-7Pa">
-                                        <rect key="frame" x="67" y="157" width="240" height="29"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" id="cfb-NQ-YLq">
+                                        <rect key="frame" x="0.0" y="87" width="375" height="144"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="15%"/>
-                                            <segment title="20%"/>
-                                            <segment title="22%"/>
-                                        </segments>
-                                        <color key="tintColor" red="0.32899633610000001" green="0.77696314099999997" blue="0.34459823620000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="3vL-5r-JKz"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Splitting how many ways?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MHY-6d-0xK">
-                                        <rect key="frame" x="16" y="124" width="197" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="hL1-lG-Aed">
-                                        <rect key="frame" x="242" y="119" width="117" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                        <connections>
-                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="Vgq-oD-Z5q"/>
-                                        </connections>
-                                    </textField>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="4Zw-hs-7Pa">
+                                                <rect key="frame" x="67" y="79" width="240" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <segments>
+                                                    <segment title="15%"/>
+                                                    <segment title="20%"/>
+                                                    <segment title="22%"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.32899633610000001" green="0.77696314099999997" blue="0.34459823620000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="3vL-5r-JKz"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splitting how many ways?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MHY-6d-0xK">
+                                                <rect key="frame" x="16" y="46" width="197" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="hL1-lG-Aed">
+                                                <rect key="frame" x="242" y="41" width="117" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="Vgq-oD-Z5q"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kci-2r-Ue8">
+                                                <rect key="frame" x="323" y="3" width="36" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Clear"/>
+                                                <connections>
+                                                    <action selector="clearBillField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1s5-EH-bQM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="32" id="qFa-sg-Rz1">
-                                <rect key="frame" x="16" y="75" width="343" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="Jh0-Ms-VUp"/>
-                                </connections>
-                            </textField>
                             <view contentMode="scaleToFill" misplaced="YES" id="NDU-tg-a8L">
-                                <rect key="frame" x="0.0" y="266" width="375" height="401"/>
+                                <rect key="frame" x="0.0" y="291" width="375" height="376"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vhp-sI-p6f">
@@ -113,6 +118,16 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.3289963360537656" green="0.77696314102564101" blue="0.34459823621651903" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" textAlignment="right" minimumFontSize="32" id="qFa-sg-Rz1">
+                                <rect key="frame" x="16" y="76" width="343" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="Jh0-Ms-VUp"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -131,10 +146,12 @@
                         <outlet property="amountEachLabel" destination="fHr-Do-HYs" id="uKa-er-8TE"/>
                         <outlet property="billField" destination="qFa-sg-Rz1" id="YbZ-xZ-ga9"/>
                         <outlet property="bottomView" destination="NDU-tg-a8L" id="8c2-A5-9py"/>
+                        <outlet property="clearBtn" destination="Kci-2r-Ue8" id="wVI-Ee-2zY"/>
+                        <outlet property="controlsView" destination="cfb-NQ-YLq" id="znq-2f-Ytm"/>
                         <outlet property="numberInPartyField" destination="hL1-lG-Aed" id="l3C-sR-tY2"/>
                         <outlet property="tipControl" destination="4Zw-hs-7Pa" id="pbA-SE-GpK"/>
                         <outlet property="tipLabel" destination="jPp-FZ-vS9" id="ZzG-N8-q1C"/>
-                        <outlet property="topView" destination="cfb-NQ-YLq" id="YsG-O9-mzx"/>
+                        <outlet property="topView" destination="vUe-8Z-XRs" id="HvD-aI-bZW"/>
                         <outlet property="totalLabel" destination="fu5-Va-X3p" id="vSI-GP-DDs"/>
                     </connections>
                 </viewController>
