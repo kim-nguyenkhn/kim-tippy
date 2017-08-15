@@ -23,6 +23,7 @@ The following **additional** features are implemented:
 
 * [x] Figuring out how much to Venmo? After taking the number in your party, *kim-tippy* now calculates the amount to pay per person.
 * [x] Added a clear button for convenience! Shows itself after user enters at least 2 digits.
+* [x] Added Auto-Layout to the views to optimize for all iOS device-sizes.
 
 ## Video Walkthrough
 
